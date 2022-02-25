@@ -8,28 +8,38 @@
 
     <TextView
         android:id="@+id/exerciseName"
-        android:layout_width="263dp"
-        android:layout_height="69dp"
+        android:layout_width="326dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="68dp"
         android:textAlignment="center"
         android:textSize="40dp"
-        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="TextView" />
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="304dp"
+        android:layout_width="326dp"
         android:layout_height="139dp"
-        android:layout_marginTop="140dp"
-        tools:text="TextView"
-        android:textSize="30dp"
+        android:layout_marginTop="156dp"
         android:textAlignment="center"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exerciseName" />
+        app:layout_constraintTop_toBottomOf="@+id/exerciseName"
+        tools:text="TextView" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Easy peasy!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
