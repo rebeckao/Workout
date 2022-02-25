@@ -2,6 +2,8 @@ package com.onex.clever.workout
 
 class Greeting {
     fun greeting(): String {
-        return "Hello, ${Platform().platform}!"
+        val randomizer = ExcerciseRandomizer()
+        val session = randomizer.createWorkoutSession()
+        return "Workout! \n ${session}!"
     }
 }
