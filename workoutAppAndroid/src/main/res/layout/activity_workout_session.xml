@@ -7,11 +7,24 @@
     tools:context=".WorkoutSessionActivity">
 
     <TextView
+        android:id="@+id/exerciseName"
+        android:layout_width="263dp"
+        android:layout_height="69dp"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
+
+    <TextView
         android:id="@+id/description"
         android:layout_width="304dp"
         android:layout_height="139dp"
         android:layout_marginTop="140dp"
-        android:text="TextView"
+        tools:text="TextView"
         android:textSize="30dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,15 +32,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exerciseName" />
 
-    <TextView
-        android:id="@+id/exerciseName"
-        android:layout_width="263dp"
-        android:layout_height="69dp"
-        android:text="TextView"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="59dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
