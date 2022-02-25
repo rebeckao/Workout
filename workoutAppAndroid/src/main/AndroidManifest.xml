@@ -7,6 +7,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+        <activity
             android:name=".WorkoutSessionActivity"
             android:exported="false" />
         <activity

@@ -1,5 +1,6 @@
 package com.onex.clever.workout.android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -23,7 +24,13 @@ class WorkoutSessionActivity : AppCompatActivity() {
         displayNextExercise(exerciseName, session, exerciseDescription)
         nextButton.setOnClickListener {
             currentExcerciseIndex++
-            displayNextExercise(exerciseName, session, exerciseDescription)
+            if (session.size > currentExcerciseIndex) {
+                displayNextExercise(exerciseName, session, exerciseDescription)
+            } else {
+                val intent = Intent(this, SuccessActivity::class.java)
+                startActivity(intent)
+            }
+
         }
     }
 
