@@ -20,6 +20,7 @@ class ExcerciseRandomizer {
                 emptyList()
             )
         )
-        return possibleExcercises
+
+        return listOf(possibleExcercises.random(), possibleExcercises.random(), possibleExcercises.random())
     }
 }
