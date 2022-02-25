@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val start_button = findViewById<Button>(R.id.start_workout)
         start_button.setOnClickListener{
+            setContentView(R.layout.activity_workout_session)
             tv.text = greet()
         }
 
