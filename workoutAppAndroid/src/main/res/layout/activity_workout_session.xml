@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
     android:layout_height="match_parent"
     tools:context=".WorkoutSessionActivity">
 
@@ -13,6 +14,7 @@
         android:layout_marginTop="68dp"
         android:textAlignment="center"
         android:textSize="40dp"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +28,7 @@
         android:layout_marginTop="156dp"
         android:textAlignment="center"
         android:textSize="30dp"
+        android:textColor="#959595"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,10 +37,13 @@
 
     <Button
         android:id="@+id/next_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
         android:layout_marginTop="80dp"
+        android:background="#332E2E"
         android:text="Easy peasy!"
+        android:textColor="#e0e0e0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
