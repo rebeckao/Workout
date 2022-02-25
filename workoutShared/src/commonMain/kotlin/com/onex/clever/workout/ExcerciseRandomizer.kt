@@ -21,6 +21,11 @@ class ExcerciseRandomizer {
             )
         )
 
-        return listOf(possibleExcercises.random(), possibleExcercises.random(), possibleExcercises.random())
+        val selectedExcercises = possibleExcercises.toMutableList()
+        while (selectedExcercises.size > 3) {
+            selectedExcercises.remove(selectedExcercises.random())
+        }
+
+        return selectedExcercises
     }
 }
