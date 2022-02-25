@@ -1,5 +1,6 @@
 package com.onex.clever.workout.android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         val start_button = findViewById<Button>(R.id.start_workout)
         start_button.setOnClickListener{
-            setContentView(R.layout.activity_workout_session)
+            val intent = Intent(this, WorkoutSessionActivity::class.java)
+            startActivity(intent)
         }
     }
 }
